@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import {userSignOut} from "../../redux/actions/userActions";
 import {
@@ -19,7 +19,7 @@ import styles from './styles';
 
 export const NavBar = () => {
     const dispatch = useDispatch();
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     const toggleSlider = () => {
         setOpen(!open);
@@ -29,7 +29,8 @@ export const NavBar = () => {
         <Box sx={styles.sideListContainer} component="div">
             <Avatar
                 sx={styles.avatar}
-            > A </Avatar>
+            > A
+            </Avatar>
             <Divider />
             <List>
                 <ListItem disablePadding sx={{display: 'block'}}>
