@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {userSignOut} from "../../redux/actions/userActions";
+import {userSignOut} from "../../../init/store/actions/userActions";
 import {
     AppBar,
     Avatar,

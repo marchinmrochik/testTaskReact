@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {Filters, NavBar, ProductList} from "../../components";
 import {useDispatch} from "react-redux";
-import {getProduct} from "../../redux/actions/productActions";
+import {getProduct} from "../../../init/store/actions/productActions";
 import {Box} from "@mui/material";
 
 export const Products = () => {

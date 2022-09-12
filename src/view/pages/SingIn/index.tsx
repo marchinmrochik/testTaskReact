@@ -1,15 +1,14 @@
 import React, {useEffect, FC} from 'react';
 import {shallowEqual, useDispatch, useSelector} from "react-redux";
-import {authStateSelector} from "../../redux/selectors";
+import {authStateSelector} from "../../../init/store/selectors";
 import {useNavigate} from "react-router-dom";
-import {userSignIn, userSignUp} from "../../redux/actions/userActions";
+import {userSignIn, userSignUp} from "../../../init/store/actions/userActions";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {Avatar, Button, TextField, Link, Grid, Box, Typography, Container} from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
-import {routes} from "../../constants/routes";
-import {UserData} from "../../models/user";
-
+import {routes} from "../../../init/constants/routes";
+import {UserData} from "../../../init/models/user";
 
 interface SingInProp {
     singUpPage?: boolean;

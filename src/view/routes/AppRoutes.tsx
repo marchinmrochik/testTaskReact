@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { routes } from "../constants/routes";
+import { routes } from "../../init/constants/routes";
 import { Products, SignIn, SignUp } from "../pages";
 import { PrivateRoute } from "../components";
 

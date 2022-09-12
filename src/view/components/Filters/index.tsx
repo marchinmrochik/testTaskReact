@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {shallowEqual, useDispatch, useSelector} from "react-redux";
-import {getProductTypesSelector} from "../../redux/selectors";
-import {FilteredProduct} from "../../redux/actions/productActions";
+import {getProductTypesSelector} from "../../../init/store/selectors";
+import {FilteredProduct} from "../../../init/store/actions/productActions";
 import {useMediaQuery, InputLabel, OutlinedInput, MenuItem, Checkbox, ListItemText, FormControl, useTheme} from "@mui/material";
 import Select, {SelectChangeEvent} from "@mui/material/Select";
 

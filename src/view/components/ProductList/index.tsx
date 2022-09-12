@@ -1,10 +1,10 @@
 import React from 'react';
 import {shallowEqual, useSelector} from "react-redux";
-import {getFilteredProductsSelector, getProductSelector} from "../../redux/selectors";
+import {getFilteredProductsSelector, getProductSelector} from "../../../init/store/selectors";
 import {Grid} from "@mui/material";
 import {ProductItem} from '../index'
 
-import {ProductItemData} from "../../models/products";
+import {ProductItemData} from "../../../init/models/products";
 
 export const ProductList = () => {
   const products = useSelector(getProductSelector, shallowEqual)

@@ -1,6 +1,6 @@
 import React, {useState, FC} from "react";
 import {Box, Card, CardContent, CardMedia, Grid, Modal, Typography} from "@mui/material";
-import {ProductItemData} from "../../models/products";
+import {ProductItemData} from "../../../init/models/products";
 
 import styles from "./styles";
 

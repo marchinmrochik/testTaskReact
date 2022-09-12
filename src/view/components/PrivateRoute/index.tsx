@@ -1,8 +1,8 @@
 import React, {FC} from 'react';
 import {Navigate} from 'react-router-dom';
-import {routes} from '../../constants/routes';
+import {routes} from '../../../init/constants/routes';
 import {shallowEqual, useSelector} from "react-redux";
-import {authStateSelector} from "../../redux/selectors";
+import {authStateSelector} from "../../../init/store/selectors";
 
 export const PrivateRoute: FC<{ children: JSX.Element }> = ({children}) => {
     const isAuthenticated = useSelector(authStateSelector, shallowEqual)
